@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@media (min-width:600px) {
+  body {
+      font-size: 18px;
+  }
+}
+img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 275px;
+  margin: 1em auto;
+  background-color: var(--var-card-dark);
+  border-radius: 15px;
+  padding: 1.2rem;
+  border: solid 0.5px black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a.hero-image-container {
+position: relative;
+display: block;
+}
+.main-content h1{
+margin-block: 0.3em;
+font-size: 1.2em;
+color: black;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.action-btns button{
+  margin: 5px;
+}
+
+/* Loader */
+.app-spinner{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d6d6d6;
+  border-radius: 50%;
+  border-top-color: #6200ee;
+  animation: spin  1s linear infinite;
+  margin-right: 10px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin{
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
